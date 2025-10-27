@@ -10,12 +10,22 @@ h1 {
     display:flex;  
     flex-wrap:wrap; 
 }
+.projects h2 {
+  /* display the h2 on its own line, not with the section blobs */
+  width: 100%
+}
 .project {
+    /* form the section blobs */
     width: 30%;
     margin: 10px;
     padding: 20px 10px;
     background: white; /* pick a color */
-    border-radius: 25%;
+    /* rounded corners for the blobs */
+    border-radius: 25%
+}
+.project h3 {
+  /* pull the h3 text away from the ;eft blob wall */
+  margin-left: 50px;
 }
 .project img {
   width: 100px;
@@ -23,13 +33,11 @@ h1 {
   margin: 10px;
   border: 2px solid mediumvioletred (126, 14, 201);/* choose a color */
   display: block;
-  margin: auto;
+  /* center the images inside the blobs */
+  text-align: center;
 }
-a { /* change the appearance of ALL links */
-  text-decoration: none
-  color: mediumvioletred ;
-}
-.project p { /* change the appearance of paragraph tags inside .project divs */
+.project p { 
+/* change the p text in the blob */
 text-align: center;
 margin: 15px;
 }
